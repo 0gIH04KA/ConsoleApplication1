@@ -13,6 +13,7 @@ namespace ConsoleApplication1
     {
         static void Main()
         {
+            
             Print();
                         
             Console.ReadKey();
@@ -134,6 +135,85 @@ namespace ConsoleApplication1
 
         }
 
+
+
+
+
+        static void IFFF()
+        {
+            Console.WriteLine("Задание первое: ");
+
+            //Ввод данных 
+            Console.Write("Введите первое число ");
+            int A1 = Convert.ToInt32(Console.ReadLine()) ;
+
+            Console.Write("Введите второе число ");
+            int A2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Введите третье число ");
+            int A3 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Введите четвертое число ");
+            int A4 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Введите пятое число ");
+            int A5 = Convert.ToInt32(Console.ReadLine());
+
+            //нахождение МАХ числа
+
+            if (A1 > A2 && A1 > A2 && A1 > A3 && A1 > A4 && A1 > A5)
+            {
+                Console.WriteLine($"Число: {A1} больше остальных");
+            }
+
+            else if (A2 > A1 && A2 > A3 && A2 > A4 && A2 > A5)
+            {
+                Console.WriteLine($"Число: {A2} больше остальных");
+            }
+
+            else if (A3 > A1 && A3 > A2 && A3 > A4 && A3 > A5)
+            {
+                Console.WriteLine($"Число: {A3} больше остальных");
+            }
+
+            else if (A4 > A1 && A4 > A2 && A4 > A3 && A4 > A5)
+            {
+                Console.WriteLine($"Число: {A4} больше остальных");
+            }
+
+            else
+            {
+                Console.WriteLine($"Число: {A5} больше остальных");
+            }
+
+
+            // нахождение МИН числа
+
+            if (A1 < A2 && A1 < A2 && A1 < A3 && A1 < A4 && A1 < A5)
+            {
+                Console.WriteLine($"Число: {A1} меньше остальных");
+            }
+
+            else if (A2 < A1 && A2 < A3 && A2 < A4 && A2 < A5)
+            {
+                Console.WriteLine($"Число: {A2} меньше остальных");
+            }
+
+            else if (A3 < A1 && A3 < A2 && A3 < A4 && A3 < A5)
+            {
+                Console.WriteLine($"Число: {A3} меньше остальных");
+            }
+
+            else if (A4 < A1 && A4 < A2 && A4 < A3 && A4 < A5)
+            {
+                Console.WriteLine($"Число: {A4} меньше остальных");
+            }
+
+            else
+            {
+                Console.WriteLine($"Число: {A5} меньше остальных");
+            }
+        }
     }
    
 }
