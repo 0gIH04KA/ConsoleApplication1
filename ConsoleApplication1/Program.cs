@@ -13,7 +13,7 @@ namespace ConsoleApplication1
     {
         static void Main()
         {
-            Test.Print();
+            Print();
                         
             Console.ReadKey();
         }
@@ -110,14 +110,14 @@ namespace ConsoleApplication1
                 switch (a)
                 {
                     case 1:
-                        Test.Dz_1();
+                        Dz_1();
                         Console.WriteLine("Нажмите любую клавишу для очистки консоли");
                         Console.ReadKey();
                         Console.Clear();
                         break;
 
                     case 2:
-                        Test.Dz_2();
+                        Dz_2();
                         Console.WriteLine("Нажмите любую клавишу для очистки консоли");
                         Console.ReadKey();
                         Console.Clear();
