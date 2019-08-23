@@ -16,7 +16,6 @@ namespace ConsoleApplication1
 
             Print();
 
-       
             Console.ReadKey();
         }
 
@@ -127,7 +126,10 @@ namespace ConsoleApplication1
 
             }
             else
+            {
                 Console.WriteLine("Вы превысили диапазон значений :(");
+            }
+                
 
          }
 
@@ -189,7 +191,7 @@ namespace ConsoleApplication1
         {
             for (;;)
             { 
-                Console.WriteLine("Какое задание загрузить: ");
+                Console.WriteLine("Какое задание загрузить? **для закрытия консоли нажмите '9' ");
                 string Text = Console.ReadLine();
                 int NumberTask = Convert.ToInt32(Text);
 
@@ -209,7 +211,6 @@ namespace ConsoleApplication1
                         Console.Clear();
                         break;
 
-
                     case 3:
                         Dz_3();
                         Console.WriteLine("Нажмите любую клавишу для очистки консоли");
@@ -217,8 +218,12 @@ namespace ConsoleApplication1
                         Console.Clear();
                         break;
 
+                    case 9:
+                        Environment.Exit(0); ;
+                        break;
+
                     default:
-                        Console.WriteLine("На данный момент доступно только 2 домашних задания\n(В дальнейшем планируется рассширение списка приложений)\nНажмите любую клавишу для очистки консоли");
+                        Console.WriteLine("На данный момент доступно только 2 домашних задания\n(В дальнейшем планируется расширение списка приложений)\nНажмите любую клавишу для очистки консоли");
                         Console.ReadKey();
                         Console.Clear();
                         break;
