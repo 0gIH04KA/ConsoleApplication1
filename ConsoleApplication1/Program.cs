@@ -15,6 +15,7 @@ namespace ConsoleApplication1
         {
 
             Print();
+
        
             Console.ReadKey();
         }
